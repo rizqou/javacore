@@ -39,12 +39,15 @@ public class FrenchRevenueTaxCalculator {
         }
         else if(taxableSalary2 < 82341){
            double finalSalary = (taxableSalary1 * 0.89) + 11294 + (taxableSalary2 * 0.70);
+            System.out.println("Your Net salary after all taxes is " + finalSalary);
         }
         else if(taxableSalary3 < 177106){
             double finalSalary = (taxableSalary1 * 0.89) + 11294 + (taxableSalary2 * 0.70) +(taxableSalary3 * 0.59);
+            System.out.println("Your Net salary after all taxes is " + finalSalary);
         }
         else if(taxableSalary4 > 177106) {
             double finalSalary = (taxableSalary1 * 0.89) + 11294 + (taxableSalary2 * 0.70) +(taxableSalary3 * 0.59) +(taxableSalary4 * 0.55);
+            System.out.println("Your Net salary after all taxes is " + finalSalary);
         }
         else {
             System.out.println("Your Net salary after all taxes is " + salaryAfterFirstTax);
