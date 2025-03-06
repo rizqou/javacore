@@ -20,5 +20,9 @@ public class ConditionError {
         } else {
             System.out.println("Vous êtes une exception dans ce monde !");
         }
+        /* la condition age > 18 est trop générale, ce qui fait que le programme tombe et s'arrete à cette condition
+        sans meme vérifier les conditions suivantes lorsqu'elles s'imposent. Ici la condition age < 60 suffit à verifier
+        si l'age de l'utilisateur se trouve dans la tranche 18-60.
+         */
     }
 }
