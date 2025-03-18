@@ -1,4 +1,4 @@
-package javacore.chapter02.condition.exercice;
+package javacore.chapter03.loop.exercice;
 
 public class BasicStopwatch {
     public static void main(String[] args) throws InterruptedException {
@@ -18,18 +18,18 @@ public class BasicStopwatch {
             int minute =0;
             int hour =0;
             System.out.println(second + i +" seconds "+ minute +" minutes "+ hour +" hours");
-                if(second >= 60) {
-                    second = 0;
-                    minute++;
+            if(second >= 60) {
+                second = 0;
+                minute++;
 
-                }
-                if(minute >= 60) {
-                    minute = 0;
-                    hour++;
-                }
-                if(hour >= 24) {
-                    hour = 0;
-                }
+            }
+            if(minute >= 60) {
+                minute = 0;
+                hour++;
+            }
+            if(hour >= 24) {
+                hour = 0;
+            }
             /*
              * Incrémente "i = i + 1;" pour atteindre la condition de la boucle while
              */
@@ -39,3 +39,4 @@ public class BasicStopwatch {
     }
 
 }
+
